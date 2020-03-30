@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Poem } from "./Poem";
 import Quote from "./Quote";
@@ -19,8 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      <button className="quotes-button" onClick={onClickQuotes}>QUOTES</button>
-      <button className="poems-button" onClick={onClickPoems}>POEMS</button>
+      <button className="quotes-button" onClick={onClickQuotes}>
+        QUOTES
+      </button>
+      <button className="poems-button" onClick={onClickPoems}>
+        POEMS
+      </button>
       {showPoems && <Poem />}
       {showQuotes && <Quote />}
     </div>
